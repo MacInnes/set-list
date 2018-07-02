@@ -1,0 +1,36 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #ccffff;
+}
+
+h1 {
+  font-family: 'Spirax', cursive;
+  text-align: center;
+
+}
+
+img {
+  border-radius: 50%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.song-container {
+  display: inline-grid;
+  grid-template-columns: 33% 33% auto;
+  grid-template-rows: 33% auto 33%;
+  grid-gap: 1%;
+  text-align: center;
+}
+
+.song {
+  background-color: #99ffff;
+  justify-content: center;
+}
+
+.song-image {
+  width: 40%;
+  height: auto;
+}

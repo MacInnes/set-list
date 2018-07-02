@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Spirax|Ubuntu" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Songs</title>
+  </head>
+  <body>
+    <h1>Songs</h1>
+    <div class="song-container">
+      <% @songs.each do |song| %>
+      <ul class="song">
+        <img class="song-image" src="https://carleton.ca/music/wp-content/uploads/Piano-keys-banner.jpg">
+        <li class="title"> <%= song.title %> </li>
+        <li class="length"> <%= song.length %> seconds </li>
+        <li class="play_count"> Play count: <%= song.play_count %> </li>
+        <% if song.playlist %>
+          <li class="playlist"> Playlist: <%= song.playlist.name %> </li>
+        <% end %>
+      </ul>
+      <% end %>
+    </div>
+  </body>
+</html>

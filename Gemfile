@@ -4,8 +4,11 @@ gem 'sinatra', require: 'sinatra/base'
 gem 'sqlite3'
 gem 'activerecord'
 gem 'sinatra-activerecord'
+gem 'pry'
 
 group :development, :test do
   gem 'shotgun'
   gem 'tux'
+  gem 'rspec'
+  gem 'database_cleaner'
 end
